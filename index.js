@@ -1,5 +1,5 @@
 const chalk = require('chalk'),
-      listEndpoints = require('express-list-endpoints'),
+      listEndpoints = require('express-routemap'),
       Table = require('cli-table');
 
 module.exports = function(app) {

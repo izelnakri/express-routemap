@@ -10,7 +10,7 @@
   // in your index.js:
 
   const express = require('express'),
-        displayRoutes = require('./express-routemap');
+        displayRoutes = require('express-routemap');
 
   var app = express();
 
