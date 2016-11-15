@@ -10,6 +10,10 @@
     "express",
     "routes"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/izelnakri/express-routemap.git"
+  },
   "author": "Izel Nakri",
   "license": "MIT",
   "dependencies": {
