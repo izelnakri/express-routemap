@@ -1,6 +1,6 @@
 {
   "name": "express-routemap",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Display express server routes in your terminal",
   "main": "index.js",
   "scripts": {
@@ -14,6 +14,7 @@
   "license": "MIT",
   "dependencies": {
     "chalk": "^1.1.3",
+    "cli-table": "^0.3.1",
     "express-list-endpoints": "^2.0.3"
   }
 }

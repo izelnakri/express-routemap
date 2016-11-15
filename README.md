@@ -1,6 +1,6 @@
 # Display all your express routes in the terminal!
 
-![](http://g.recordit.co/epmfI4Hv9j.gif)
+![](http://g.recordit.co/PhGRKSCZjL.gif)
 
 # HOW TO:
 

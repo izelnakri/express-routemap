@@ -1,12 +1,19 @@
 const chalk = require('chalk'),
-      listEndpoints = require('express-list-endpoints');
+      listEndpoints = require('express-list-endpoints'),
+      Table = require('cli-table');
 
 module.exports = function(app) {
-  listEndpoints(app).forEach((endpoint) => {
-    console.log(
-      makeMethodsColorsful(endpoint.methods).join(' '), endpoint.path
-    );
+  var table = new Table({
+    head: ['METHOD', 'ROUTE'],
+    colWidths: [25, 50]
   });
+
+  listEndpoints(app).forEach((endpoint) => {
+    endpoint.methods = makeMethodsColorsful(endpoint.methods);
+    table.push([endpoint.methods.join(' '), endpoint.path]);
+  });
+
+  console.log(table.toString());
 };
 
 function makeMethodsColorsful(methods) {
