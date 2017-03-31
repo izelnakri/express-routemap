@@ -26,5 +26,8 @@
     console.log('Web server started at port 3000!');
     // HERE IS THE FUN PART:
     displayRoutes(app);
+
+    // or use like this
+    displayRoutes(app, 'route-table.log');
   });
 ```

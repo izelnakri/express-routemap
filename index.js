@@ -1,8 +1,9 @@
-const chalk = require('chalk'),
+const fs = require('fs'),
+      chalk = require('chalk'),
       listEndpoints = require('express-list-endpoints'),
       Table = require('cli-table');
 
-module.exports = function(app) {
+module.exports = function(app, filename) {
   var table = new Table({
     head: ['METHOD', 'ROUTE'],
     colWidths: [25, 50]
@@ -12,6 +13,13 @@ module.exports = function(app) {
     endpoint.methods = makeMethodsColorsful(endpoint.methods);
     table.push([endpoint.methods.join(' '), endpoint.path]);
   });
+
+  if (typeof filename === 'string') {
+    return fs.writeFile(filename, table.toString(), (error) => {
+      if (error) throw error;
+      console.log(`Printed route table to ${filename}`);
+    });
+  } 
 
   console.log(table.toString());
 };
