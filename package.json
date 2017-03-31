@@ -1,6 +1,6 @@
 {
   "name": "express-routemap",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Display express server routes in your terminal",
   "main": "index.js",
   "scripts": {
