@@ -14,14 +14,14 @@ module.exports = function(app, filename) {
     table.push([endpoint.methods.join(' '), endpoint.path]);
   });
 
-  if (filename && typeof filename === 'string') {
-    fs.writeFile(filename, table.toString(), (error) => {
-      if (error) console.log('Failed to print route table to ' + filename);
-      else console.log('Printed route table to ' + filename);
-    })
-  } else {
-    console.log(table.toString());
-  }
+  if (typeof filename === 'string') {
+    return fs.writeFile(filename, table.toString(), (error) => {
+      if (error) throw error;
+      console.log(`Printed route table to ${filename}`);
+    });
+  } 
+
+  console.log(table.toString());
 };
 
 function makeMethodsColorsful(methods) {
