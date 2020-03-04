@@ -1,10 +1,10 @@
-const fs = require('fs'),
-      chalk = require('chalk'),
-      listEndpoints = require('express-list-endpoints'),
-      Table = require('cli-table');
+const fs = require('fs');
+const chalk = require('chalk');
+const listEndpoints = require('express-list-endpoints');
+const Table = require('cli-table');
 
 module.exports = function(app, filename) {
-  var table = new Table({
+  let table = new Table({
     head: ['METHOD', 'ROUTE'],
     colWidths: [25, 50]
   });
@@ -19,7 +19,7 @@ module.exports = function(app, filename) {
       if (error) throw error;
       console.log(`Printed route table to ${filename}`);
     });
-  } 
+  }
 
   console.log(table.toString());
 };

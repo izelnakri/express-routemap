@@ -1,6 +1,6 @@
 {
   "name": "express-routemap",
-  "version": "1.1.0",
+  "version": "1.6.0",
   "description": "Display express server routes in your terminal",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,14 @@
   "author": "Izel Nakri",
   "license": "MIT",
   "dependencies": {
-    "chalk": "^1.1.3",
+    "chalk": "^3.0.0",
     "cli-table": "^0.3.1",
-    "express-list-endpoints": "^2.0.3"
+    "express-list-endpoints": "^4.0.1"
+  },
+  "volta": {
+    "node": "13.10.0"
+  },
+  "devDependencies": {
+    "express": "^4.17.1"
   }
 }

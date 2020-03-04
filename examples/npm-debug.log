@@ -1,0 +1,74 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/bin/node',
+1 verbose cli   '/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/bin/npm',
+1 verbose cli   'view',
+1 verbose cli   '--json',
+1 verbose cli   '13.10@latest' ]
+2 info using npm@3.10.8
+3 info using node@v6.9.1
+4 silly mapToRegistry name 13.10
+5 silly mapToRegistry using default registry
+6 silly mapToRegistry registry https://registry.npmjs.org/
+7 silly mapToRegistry data Result {
+7 silly mapToRegistry   raw: '13.10',
+7 silly mapToRegistry   scope: null,
+7 silly mapToRegistry   escapedName: '13.10',
+7 silly mapToRegistry   name: '13.10',
+7 silly mapToRegistry   rawSpec: '',
+7 silly mapToRegistry   spec: 'latest',
+7 silly mapToRegistry   type: 'tag' }
+8 silly mapToRegistry uri https://registry.npmjs.org/13.10
+9 verbose request uri https://registry.npmjs.org/13.10
+10 verbose request no auth needed
+11 info attempt registry request try #1 at 11:33:35 PM
+12 verbose request using bearer token for auth
+13 verbose request id 158257c655e26cf9
+14 http request GET https://registry.npmjs.org/13.10
+15 http 404 https://registry.npmjs.org/13.10
+16 verbose headers { date: 'Wed, 04 Mar 2020 22:33:36 GMT',
+16 verbose headers   'content-type': 'application/json',
+16 verbose headers   'content-length': '21',
+16 verbose headers   connection: 'keep-alive',
+16 verbose headers   'set-cookie': [ '__cfduid=d3273af06ca5feab92e27f63e03655b041583361215; expires=Fri, 03-Apr-20 22:33:35 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+16 verbose headers   'cf-ray': '56ef0f4f8c06d66d-MAD',
+16 verbose headers   vary: 'Accept-Encoding',
+16 verbose headers   'cf-cache-status': 'MISS',
+16 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+16 verbose headers   server: 'cloudflare' }
+17 silly get cb [ 404,
+17 silly get   { date: 'Wed, 04 Mar 2020 22:33:36 GMT',
+17 silly get     'content-type': 'application/json',
+17 silly get     'content-length': '21',
+17 silly get     connection: 'keep-alive',
+17 silly get     'set-cookie': [ '__cfduid=d3273af06ca5feab92e27f63e03655b041583361215; expires=Fri, 03-Apr-20 22:33:35 GMT; path=/; domain=.npmjs.org; HttpOnly; SameSite=Lax' ],
+17 silly get     'cf-ray': '56ef0f4f8c06d66d-MAD',
+17 silly get     vary: 'Accept-Encoding',
+17 silly get     'cf-cache-status': 'MISS',
+17 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+17 silly get     server: 'cloudflare' } ]
+18 verbose stack Error: Not found : 13.10
+18 verbose stack     at makeError (/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:302:12)
+18 verbose stack     at CachingRegistryClient.<anonymous> (/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:290:14)
+18 verbose stack     at Request._callback (/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:210:14)
+18 verbose stack     at Request.self.callback (/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/lib/node_modules/npm/node_modules/request/request.js:187:22)
+18 verbose stack     at emitTwo (events.js:106:13)
+18 verbose stack     at Request.emit (events.js:191:7)
+18 verbose stack     at Request.<anonymous> (/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/lib/node_modules/npm/node_modules/request/request.js:1044:10)
+18 verbose stack     at emitOne (events.js:96:13)
+18 verbose stack     at Request.emit (events.js:188:7)
+18 verbose stack     at IncomingMessage.<anonymous> (/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/lib/node_modules/npm/node_modules/request/request.js:965:12)
+19 verbose statusCode 404
+20 verbose pkgid 13.10
+21 verbose cwd /home/izelnakri/Github/express-routemap/examples
+22 error Linux 5.5.7-arch1-1
+23 error argv "/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/bin/node" "/home/izelnakri/.volta/tools/image/node/6.9.1/3.10.8/bin/npm" "view" "--json" "13.10@latest"
+24 error node v6.9.1
+25 error npm  v3.10.8
+26 error code E404
+27 error 404 Not found : 13.10
+28 error 404
+29 error 404 '13.10' is not in the npm registry.
+30 error 404 You should bug the author to publish it (or use the name yourself!)
+31 error 404 Note that you can also install from a
+32 error 404 tarball, folder, http url, or git url.
+33 verbose exit [ 1, true ]
